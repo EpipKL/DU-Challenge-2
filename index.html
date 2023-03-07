@@ -8,21 +8,24 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Head and Navigation -->
     <header>
         <nav>
             <h1 id="logo">KL</h1>
             <ul class="nav-list">
                 <li class="nav-link"><a href="#">Home</a></li>
-                <li class="nav-link"><a href="#">About</a></li>
-                <li class="nav-link"><a href="#">Work</a></li>
-                <li class="nav-link"><a href="#">Contact</a></li>
+                <li class="nav-link"><a href="#about">About</a></li>
+                <li class="nav-link"><a href="#work">Work</a></li>
+                <li class="nav-link"><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <br>
+    <!-- Main content sections -->
 
-    <main>
+    <main style="padding-top: 65px;">
+
+        <!-- About Me Section -->
 
         <div class="main-container">
 
@@ -64,29 +67,62 @@
             </section>
 
             <br>
-            <br>
 
             <div class="sec-side">
-                <img src="https://picsum.photos/500" alt="">
-                <img src="https://picsum.photos/500" alt="" id="bottom-photo">
+                <img src="https://dummyimage.com/1000x1000/ffffff/000000" alt="picture number 1">
+                <img src="https://dummyimage.com/1000x1000/ffffff/000000" alt="picture number 2" id="bottom-photo">
             </div>
         
         </div>
 
-        <div class="main-container">
+        <!-- Projects section -->
+
+        <div class="main-container-full">
             <section id="work">
                 <article class="article">
                     <h2 class="sec-heading">My Work</h2>
                     <br>
+                    <h2 class="col-lg">Example 1</h2>
                     <div class="sec-body-grid">
-                        <h3 class="col">Example 1</h3>
+
                         <h3 class="col">Example 2</h3>
                         <h3 class="col">Example 3</h3>
+                        <h3 class="col">Example 4</h3>
                     </div>
                 </article>
             </section>
         </div>
 
+        <!-- Contact me section -->
+
+        <div class="main-container-full">
+            <section id="contact">
+                <article class="article">
+                    <h2 class="sec-heading">Contact Me</h2>
+                    <div class="sec-body-grid">
+                        <div class="form-container">
+
+                            <form action="">
+                                <label for="fname">First Name</label>
+                                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                                
+                                <label for="lname">Last Name</label>
+                                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email" placeholder="Your email..">
+                                
+                                <label for="subject">Message</label>
+                                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                                <input type="submit" value="Submit" class="submit-btn">
+                            </form>
+
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </div>
 
     </main>
 
